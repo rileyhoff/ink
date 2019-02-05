@@ -1,0 +1,295 @@
+/*  Lab 5 base style sheet
+    Created on : Oct 27th 2016
+    Author     : Riley Hoff
+    Based off style sheet by Robert Erickson
+*/
+@import url('reset.css');
+
+/*------------------------   standard elements  ----------------------------- */
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-image: url("../uploads/bg3.jpg");
+    background-size: cover;
+    min-height: 100%;
+}
+article{
+    padding: 2em;
+    background-color: white;
+    background-color: rgba(255, 255, 255, .7);
+}
+article#body{
+    margin-left: 8em;
+    margin-right: 8em;
+    overflow: auto;
+}
+figcaption {
+    color: #839e99;
+    font-style: italic;
+    text-align: center;
+}
+
+header{
+    overflow: auto; /* forces header to fit to figure */
+}
+
+header .float_left{
+    margin-top: 0;
+}
+
+header h1{
+    padding: 10px;
+    font-size: 80px;
+}
+
+footer {
+    float: right;
+    color:#b3b3b3;
+}
+h2{
+    display: inline-block;
+    font-size: 30px;
+    padding: 1em;
+    border-top: solid #000 thin;
+    text-align: center;
+    width: 97%;
+    margin-top: 1em;
+    letter-spacing: 2px;
+}
+h3{
+    font-size: 22px;
+    padding: .25em;
+}
+h4{
+    font-size: 22pt;
+}
+p{
+    margin: .25em;
+    font-family: Georgia, serif;
+}
+img{
+    max-width: 100%;/* image strinks to fit containor but does not stretch */
+    max-height: 400px;
+    padding: auto;
+}
+a.thick{
+    padding: 1em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    width: 7.5em;
+    text-decoration: none;
+    position: relative;
+    top: 40px;
+}
+
+figure.artwork{
+    max-height: 400px;
+}
+
+article.artwork{
+    padding: 1em;
+    border: thin solid black;
+    width: 29.5%;
+    float: left;
+    overflow: auto;
+    height: 10%;
+    margin: .25em;
+    min-height: 30em;
+}
+.clearFloats{
+    clear: both;
+}
+/*------------------------ forms ---------------------------------------------*/
+form{
+    margin:auto;
+}
+form article#main{
+    padding: 0;
+    background-color: transparent;
+}
+fieldset.wrapper{
+    padding: 2em;
+    background-color: white;
+    background-color: rgba(255, 255, 255, .7);
+}
+fieldset.listbox{
+    padding: 0;
+}fieldset.buttons{
+    padding: 0;
+}
+input{
+    width: 96%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+input[type=text], select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #5c5c5c;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    resize: none;
+}
+
+/*------------------------   nav section only  ------------------------------ */
+nav{
+    width: 6em;
+}
+nav ol{
+    position: fixed;
+    top: 0px;
+    width: 6em;
+}
+nav ol#right {
+    padding-right: 2em;
+    padding-left: 0;
+    right: 0;
+}
+nav ol#left {
+    padding-left: 0;
+    left: 0;
+}
+nav ol li{
+    display: inline-block;
+    width: 100%;
+    list-style-type: none;
+    padding: 1.5em 0em 1.5em 2em;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .8);
+}
+nav ol li a{
+    color: #fff
+}
+nav ol li.activePage a {
+    color: #aa0000;
+}
+input#btnManage{
+    position: fixed;
+    right: 0px;
+    top: 80px;
+    padding: 1.5em 2em 1.5em 2em;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    margin: 0;
+    width: 128px;
+    border-radius: 0px;
+    text-align: end;
+}
+a#updateBio{
+    position: fixed;
+    right: 0px;
+    top: 149.5px;
+    width: 80px;
+    padding: 1.5em 24px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, .8);
+}
+/* --------------------------   Index    -------------------------------------*/
+body#index header h1{
+    display: inline-block;
+    text-align: center;
+    font-size: 90px;
+    padding-top: 10%;
+    padding-bottom: 1em;
+    margin-left: 41%;
+}
+body#index a.center{
+    display: inline;
+    padding: .5em;
+    margin: .25em;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+body#index a#viewAll{
+    margin-left: 40%;
+}
+/*------------------------- viewAll.php ------------------------------------*/
+p.price{
+    font-style: italic;
+    text-align: right;
+}
+a.artistBio {
+    display: inline-block;
+    text-align: right;
+    color: #000;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    left: 94%;
+    padding: 1em;
+}
+
+/*------------------------- addArt.php ------------------------------------*/
+a.artist{
+    display: inline-block;
+    width: 80%;
+    padding: .5em;
+    margin-left:10%;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 5px 30px;
+    background-color: #5c5c5c;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+a.artist:hover {
+    background-color: black;
+}
+/*----------------------------- bio.php -------------------------------------*/
+ul{
+    list-style-type: none;
+    width: 70%;
+
+}
+.bio li {
+    font-size: 17pt;
+    padding: .25em;
+}
+img.bio {
+    float: right;
+    max-width: 10em;
+    max-height: 20em;
+    margin-right: 7%;
+}
+p#contact{
+    display: inline-block;
+}
+

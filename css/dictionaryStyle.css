@@ -1,0 +1,72 @@
+// Style shee for dictionary.php
+.nowrap {
+    white-space: nowrap;
+}
+.hide {
+    display: none;
+}
+body, table, th, td {
+    background-color: #fff;
+    color: #000;
+}
+img {
+    border: 0 none;
+}
+table, th, td {
+    border: 0.1em solid #000;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th, td {
+    padding: 0.2em;
+}
+th {
+    background-color: #e5e5e5;
+    font-weight: bold;
+}
+th.vtop, td.vtop {
+    vertical-align: top;
+}
+th.vbottom, td.vbottom {
+    vertical-align: bottom;
+}
+@media print {
+.print_ignore {
+    display: none;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.hide {
+    display: none;
+}
+body, table, th, td {
+    background-color: #fff;
+    color: #000;
+}
+img {
+    border: 0 none;
+}
+table, th, td {
+    border: 0.1em solid #000;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th, td {
+    padding: 0.2em;
+}
+th {
+    background-color: #e5e5e5;
+    font-weight: bold;
+}
+th.vtop, td.vtop {
+    vertical-align: top;
+}
+th.vbottom, td.vbottom {
+    vertical-align: bottom;
+}
+}
